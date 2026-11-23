@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deutsch mit Freunde — germana după Beste Freunde A1.1</title>
+<meta name="theme-color" content="#4f46e5"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Deutsch"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="icon.png"><link rel="manifest" href="manifest.json">
+<style>*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#f3f5fb;color:#1f2433;font-size:17px}
+#app{max-width:560px;margin:0 auto;min-height:100vh;padding-bottom:110px}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+.pad{padding:14px 16px}.center{text-align:center}
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:8px;padding:10px 12px;background:#fff;box-shadow:0 1px 0 #e5e8f0}
+.top .ttl{flex:1;font-weight:700;font-size:18px}
+.back{font-size:30px;line-height:1;padding:0 10px;color:#4f46e5}
+.ic{font-size:22px;padding:6px 8px;border-radius:12px}.ic.light{background:rgba(255,255,255,.25)}
+.hero{display:flex;justify-content:space-between;align-items:center;padding:22px 18px;background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;border-radius:0 0 26px 26px}
+.hi{font-size:24px;font-weight:800}.sub{opacity:.9;margin-top:4px}
+.path{display:grid;gap:12px}
+.lcard{position:relative;text-align:left;background:#fff;border-radius:18px;padding:14px 16px 16px;border-left:8px solid var(--c);box-shadow:0 2px 8px rgba(30,40,80,.06)}
+.lnr{font-size:13px;font-weight:700;color:var(--c);text-transform:uppercase;letter-spacing:.5px}
+.lt{font-size:19px;font-weight:800;margin:2px 0}.lro{font-size:14px;color:#667}
+.bar,.prog{height:8px;background:#eceef5;border-radius:8px;margin-top:10px;overflow:hidden}.bar i,.prog i{display:block;height:100%;background:var(--c,#4f46e5);border-radius:8px}
+.pct{position:absolute;top:14px;right:14px;font-size:13px;font-weight:700;color:#889}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.tile{background:#fff;border-radius:18px;padding:14px;text-align:left;box-shadow:0 2px 8px rgba(30,40,80,.06)}.tile:disabled{opacity:.5}
+.tile .ti{font-size:28px}.tile small{display:block;color:#778;font-size:13px;margin-top:2px}
+.hint{color:#667;font-size:14px;line-height:1.45}
+.lhead{background:var(--c);color:#fff;padding:18px}.lhead h2{margin:0 0 4px}.lhead p{margin:0;opacity:.92}
+.gh{margin:18px 0 8px;font-size:15px;color:#556;text-transform:uppercase;letter-spacing:.5px}
+.acts{display:grid;gap:8px}
+.act{display:flex;align-items:center;gap:12px;background:#fff;border-radius:16px;padding:12px 14px;text-align:left;box-shadow:0 1px 4px rgba(30,40,80,.06)}
+.aic{font-size:26px}.atx{flex:1}.atx small{display:block;color:#778;font-size:13px}.st{color:#f59e0b;font-size:16px;letter-spacing:1px}
+.btn{display:inline-block;background:#fff;border:2px solid #dfe3ee;border-radius:14px;padding:12px 16px;font-weight:700;margin-top:10px}
+.btn.primary{background:#4f46e5;border-color:#4f46e5;color:#fff}.btn.good{background:#10b981;border-color:#10b981;color:#fff}.btn.danger{color:#dc2626;border-color:#fecaca}
+.btn:disabled{opacity:.45}.wide{display:block;width:100%}
+.para{display:flex;gap:10px;background:#fff;border-radius:16px;padding:12px;margin:10px 0;box-shadow:0 1px 4px rgba(30,40,80,.05)}
+.para p{margin:0;line-height:1.6}.pl{flex:none;width:36px;height:36px;border-radius:50%;background:#eef0ff;color:#4f46e5;font-size:14px}
+.de{background:#fff4d6;color:#7a4b00;border-radius:6px;padding:1px 5px;font-weight:700;cursor:pointer;white-space:nowrap}
+.speaking{outline:3px solid #fbbf24;outline-offset:2px}
+.conj{background:#fff;border-radius:16px;padding:10px 14px;margin:8px 0}.ch{font-weight:700;margin-bottom:6px}
+.cr{display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid #f0f1f6;cursor:pointer}.cr span{color:#778}
+.legend{display:flex;gap:8px;margin:12px 0}.legend span{padding:4px 12px;border-radius:10px;font-weight:700;color:#fff}
+.a-der{--ac:#2563eb}.a-die{--ac:#dc2626}.a-das{--ac:#16a34a}
+.legend .a-der,.legend .a-die,.legend .a-das{background:var(--ac)}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.vc{background:#fff;border-radius:14px;padding:12px;text-align:left;border-top:5px solid var(--ac,#c7cbe0);box-shadow:0 1px 4px rgba(30,40,80,.06)}
+.vc b{display:block;font-size:16px}.vc small{color:#667}
+.sent{display:block;width:100%;text-align:left;background:#fff;border-radius:14px;padding:12px;margin:6px 0}.sent small{display:block;color:#667;margin-top:3px}
+.qsub{color:#556;margin:16px 0 8px;font-weight:600}
+.qp{font-size:26px;font-weight:800;margin:8px 0 16px;line-height:1.3}
+.qh{color:#667;margin-bottom:10px}
+.play{font-size:44px;width:96px;height:96px;border-radius:50%;background:#4f46e5;color:#fff;box-shadow:0 6px 16px rgba(79,70,229,.35);margin:6px 8px 10px 0}
+.slow{background:#eef0ff;color:#4f46e5;border-radius:12px;padding:8px 12px;font-weight:700;vertical-align:middle}
+.opts{display:grid;gap:10px}.opts.three{grid-template-columns:repeat(3,1fr)}
+.opt{background:#fff;border:2px solid #dfe3ee;border-radius:16px;padding:14px;font-size:18px;font-weight:600;text-align:left}
+.opts.three .opt{text-align:center;font-size:22px;border-color:var(--ac);color:var(--ac)}
+.opt.good{background:#d1fae5;border-color:#10b981}.opt.bad{background:#fee2e2;border-color:#ef4444}
+.tin,#cin,input#nm{width:100%;font-size:22px;padding:14px;border:2px solid #dfe3ee;border-radius:14px;background:#fff}
+.uml{display:flex;gap:6px;margin:8px 0;flex-wrap:wrap}.uml button{background:#fff;border:2px solid #dfe3ee;border-radius:10px;min-width:42px;padding:6px 8px;font-size:18px;font-weight:700}
+.built{min-height:62px;background:#fff;border:2px dashed #c7cbe0;border-radius:16px;padding:8px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.pool{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tile2{background:#eef0ff;color:#3730a3;border-radius:12px;padding:10px 14px;font-weight:700;font-size:18px}.tile2.ghost{opacity:.25}
+.endp{font-size:22px;font-weight:800}
+.mic{background:#fee2e2;color:#b91c1c;border-radius:14px;padding:10px 14px;font-weight:700}
+.mic.big{display:block;width:100%;font-size:20px;padding:18px;margin-top:8px}
+.heard{margin-top:10px;font-size:18px;color:#334;min-height:24px}
+.fb{margin-top:14px;padding:14px;border-radius:16px;font-size:18px;line-height:1.45}.fb.ok{background:#d1fae5}.fb.no{background:#fee2e2}
+.res{font-size:80px}.bigst{font-size:40px;color:#f59e0b;letter-spacing:4px;margin-bottom:10px}
+.seg{display:flex;background:#e7e9f3;border-radius:14px;padding:4px;gap:4px}.seg button{flex:1;padding:10px 6px;border-radius:10px;font-weight:700;font-size:14px}.seg .on{background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.1)}
+.chk{display:flex;gap:8px;align-items:center;margin:12px 0;font-size:15px}
+.dlg{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.bub{max-width:86%;background:#fff;border-radius:18px;padding:10px 14px;box-shadow:0 1px 4px rgba(30,40,80,.06)}
+.bub.left{align-self:flex-start;border-bottom-left-radius:4px}.bub.right{align-self:flex-end;border-bottom-right-radius:4px;background:#eef0ff}
+.bub.mine{border:2px solid #4f46e5}.bub.turn{outline:3px solid #ef4444;outline-offset:2px}
+.who{font-size:12px;font-weight:800;color:#889}.dde{font-weight:700;font-size:17px;cursor:pointer}.dro{color:#667;font-size:14px;margin-top:2px}
+.blur{filter:blur(6px)}.mrow{display:flex;align-items:center;gap:10px;margin-top:8px}.mrow .heard{margin:0;font-size:15px}
+.note{background:#fff8e6;border-radius:14px;padding:12px;font-size:15px;line-height:1.45;color:#5b4a1a}
+.chat #msgs{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.msg{max-width:88%;padding:10px 14px;border-radius:18px;line-height:1.45}
+.msg.me{align-self:flex-end;background:#4f46e5;color:#fff;border-bottom-right-radius:4px}
+.msg.ai{align-self:flex-start;background:#fff;border-bottom-left-radius:4px;box-shadow:0 1px 4px rgba(30,40,80,.06)}
+.cor{margin-top:8px;padding-top:8px;border-top:1px solid #f0f1f6;font-size:14px;color:#7a4b00}
+.tr{color:#4f46e5;font-size:13px;font-weight:700;margin-top:4px}
+.composer{position:fixed;left:0;right:0;bottom:0;background:#fff;padding:6px 12px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -2px 10px rgba(0,0,0,.06)}
+.composer>*{max-width:536px;margin-left:auto;margin-right:auto}
+.crow{display:flex;gap:8px;align-items:center}.crow .btn{margin:0;padding:12px 16px}.crow .mic{font-size:20px}
+#cin{font-size:17px;padding:12px}
+.welcome{padding:40px 22px;text-align:center}.welcome .big{font-size:70px}.welcome h1{margin:6px 0}.welcome label{display:block;text-align:left;margin:22px 0 6px;font-weight:700}
+input[type=range]{width:100%}
+label{font-size:15px}
+</style></head><body><div id="app"></div>
+<script>const LESSONS = [
+{
+ id:"start", nr:"Start", title:"Hallo, guten Tag!", ro:"Salutul, alfabetul, numerele, culorile",
+ color:"#f59e0b",
+ explain:[
+  "Bun venit! În germană ne salutăm diferit, după momentul zilei. Dimineața spunem [[Guten Morgen]], ziua spunem [[Guten Tag]], seara [[Guten Abend]], iar înainte de culcare [[Gute Nacht]].",
+  "Între prieteni spunem simplu [[Hallo]] când ne întâlnim și [[Tschüs]] când plecăm. Cu adulții, la plecare, spunem [[Auf Wiedersehen]].",
+  "Ca să te prezinți, spui [[Ich bin Ana]] sau [[Ich heiße Ana]]. Ca să întrebi pe cineva cum îl cheamă: [[Wie heißt du?]]",
+  "Pronunția are câteva reguli simple. Grupul „ei” se citește „ai”: [[drei]], [[zwei]]. Grupul „ie” se citește ca un „i” lung: [[vier]], [[sieben]]. Litera „w” se citește ca „v”: [[Wie]]. Litera „z” se citește „ț”: [[zehn]].",
+  "Germana are litere speciale: „ä” seamănă cu „e”, „ö” este un „e” spus cu buzele rotunjite, „ü” este un „i” spus cu buzele rotunjite, iar „ß” se citește „s”. Exemple: [[fünf]], [[zwölf]], [[heißen]].",
+  "Zilele săptămânii: [[Montag]], [[Dienstag]], [[Mittwoch]], [[Donnerstag]], [[Freitag]], [[Samstag]], [[Sonntag]].",
+  "Numerele de la treisprezece la nouăsprezece se formează ușor: [[drei]] plus [[zehn]] dă [[dreizehn]]. Ai grijă la [[sechzehn]] și [[siebzehn]], care pierd câte o literă.",
+  "Când scrii, dacă tastatura nu are ä, ö, ü sau ß, folosește butoanele speciale din aplicație."
+ ],
+ vocab:[
+  "Hallo!|Salut!","Guten Morgen!|Bună dimineața!","Guten Tag!|Bună ziua!","Guten Abend!|Bună seara!","Gute Nacht!|Noapte bună!","Tschüs!|Pa!","Auf Wiedersehen!|La revedere!","Wie heißt du?|Cum te numești?","Ich heiße Ana.|Mă numesc Ana.","Wie geht's?|Ce mai faci?","Gut, danke!|Bine, mulțumesc!","Danke!|Mulțumesc!","Bitte!|Te rog! / Cu plăcere!",
+  "der Montag|lunea","der Dienstag|marțea","der Mittwoch|miercurea","der Donnerstag|joia","der Freitag|vinerea","der Samstag|sâmbăta","der Sonntag|duminica",
+  "rot|roșu","blau|albastru","gelb|galben","grün|verde","schwarz|negru","weiß|alb","braun|maro","grau|gri","orange|portocaliu","rosa|roz"
+ ],
+ sentences:[
+  "Guten Morgen, Anna!|Bună dimineața, Anna!","Ich heiße Paul.|Mă numesc Paul.","Wie heißt du?|Cum te numești?","Heute ist Montag.|Astăzi este luni.","Wie geht es dir?|Ce mai faci?","Mir geht es gut.|Îmi merge bine."
+ ],
+ conj:[],
+ dialog:[
+  "A|Hallo! Ich heiße Nico. Wie heißt du?|Salut! Mă numesc Nico. Cum te numești?",
+  "B|Hallo Nico! Ich heiße Ana.|Salut, Nico! Mă numesc Ana.",
+  "A|Wie geht's?|Ce mai faci?",
+  "B|Gut, danke! Und dir?|Bine, mulțumesc! Și tu?",
+  "A|Super! Tschüs, Ana!|Super! Pa, Ana!",
+  "B|Tschüs, Nico!|Pa, Nico!"
+ ],
+ extra:["numbers"],
+ tutor:"Salută, spune cum te numești și cât de bine îți merge. Folosește doar saluturi, numele, Wie geht's, numere 0–20, culori și zilele săptămânii."
+},
+{
+ id:"l1", nr:"Lecția 1", title:"Und wer bist du?", ro:"Ne cunoaștem. Obiecte. der, die, das",
+ color:"#3b82f6",
+ explain:[
+  "În germană fiecare substantiv are un gen și un articol: masculin [[der]], feminin [[die]] și neutru [[das]]. De exemplu: [[der Tisch]], [[die Lampe]], [[das Sofa]].",
+  "Genul nu se potrivește mereu cu româna! [[das Mädchen]], adică fata, este neutru. De aceea învățăm fiecare cuvânt împreună cu articolul lui. În aplicație culorile te ajută: albastru înseamnă der, roșu înseamnă die, verde înseamnă das.",
+  "În germană toate substantivele se scriu cu literă mare, oriunde ar fi în propoziție: [[der Ball]], [[die Gitarre]], [[das Handy]].",
+  "Verbul se schimbă după persoană. Cu [[ich]], adică eu, adăugăm „e”: [[ich spiele]], [[ich komme]]. Cu [[du]], adică tu, adăugăm „st”: [[du spielst]], [[du kommst]]. Atenție: [[du heißt]] primește doar „t”, pentru că rădăcina se termină deja cu ß.",
+  "Verbul a fi este neregulat: [[ich bin]], [[du bist]].",
+  "Ca să spui de unde ești, folosești [[aus]]: [[Ich komme aus Chișinău]]. Întrebarea este [[Woher kommst du?]]",
+  "Ca să spui ce crezi despre ceva: [[Das ist super!]], [[Das ist toll!]], [[Das ist doof.]] Iar dacă nu știi ceva, spui: [[Ich weiß es nicht.]]"
+ ],
+ vocab:[
+  "der Junge|băiatul","das Mädchen|fata","der Freund|prietenul","die Freundin|prietena","der Tisch|masa","der Stuhl|scaunul","die Lampe|lampa","das Sofa|canapeaua","das Bett|patul","der Schrank|dulapul","das Regal|raftul","der Computer|calculatorul","das Handy|telefonul mobil","der Ball|mingea","der Fußball|mingea de fotbal","der Rucksack|rucsacul","die Gitarre|chitara","das Fahrrad|bicicleta","das Skateboard|skateboardul","die Kamera|aparatul foto",
+  "Wer ist das?|Cine este acesta?","Was ist das?|Ce este asta?","Woher kommst du?|De unde ești?","Ich komme aus Berlin.|Sunt din Berlin.","Wie alt bist du?|Câți ani ai?","Ich bin zwölf.|Am doisprezece ani.","Ich weiß es nicht.|Nu știu.","super|super","toll|grozav","doof|nasol / prostesc"
+ ],
+ sentences:[
+  "Ich komme aus Berlin.|Eu sunt din Berlin.","Woher kommst du?|De unde ești?","Wer ist das Mädchen?|Cine este fata?","Ich spiele Gitarre.|Eu cânt la chitară.","Du bist super!|Tu ești super!","Das Fahrrad ist toll!|Bicicleta e grozavă!"
+ ],
+ conj:[
+  {v:"spielen",ro:"a juca / a cânta la",f:{ich:"spiele",du:"spielst"}},
+  {v:"kommen",ro:"a veni",f:{ich:"komme",du:"kommst"}},
+  {v:"heißen",ro:"a se numi",f:{ich:"heiße",du:"heißt"}},
+  {v:"sein",ro:"a fi",f:{ich:"bin",du:"bist"}}
+ ],
+ dialog:[
+  "A|Hallo! Wer bist du?|Salut! Cine ești tu?",
+  "B|Ich bin Laura. Und du?|Eu sunt Laura. Și tu?",
+  "A|Ich heiße Max. Woher kommst du?|Mă numesc Max. De unde ești?",
+  "B|Ich komme aus Wien. Und du?|Sunt din Viena. Și tu?",
+  "A|Ich komme aus Berlin. Wie alt bist du?|Sunt din Berlin. Câți ani ai?",
+  "B|Ich bin zwölf.|Am doisprezece ani.",
+  "A|Was ist das?|Ce este asta?",
+  "B|Das ist das Fahrrad. Das ist toll!|Aceasta este bicicleta. E grozavă!"
+ ],
+ extra:[],
+ tutor:"Prezintă-te: nume, vârstă, de unde ești. Vorbește despre obiecte (der/die/das) și spune părerea: super, toll, doof. Doar persoanele ich și du."
+},
+{
+ id:"l2", nr:"Lecția 2", title:"Laura klettert gern", ro:"Hobby-uri și sport. Verbul pe locul 2",
+ color:"#ef4444",
+ explain:[
+  "Acum învățăm toate persoanele verbului. Luăm verbul [[spielen]]. Rădăcina este „spiel”, la care adăugăm terminații: [[ich spiele]], [[du spielst]], [[er spielt]], [[sie spielt]], [[wir spielen]], [[ihr spielt]], [[sie spielen]].",
+  "[[er]] înseamnă el, [[sie]] înseamnă ea, [[es]] este pentru neutru, [[wir]] înseamnă noi, [[ihr]] înseamnă voi, iar [[sie]] la plural înseamnă ei sau ele. Scris cu literă mare, [[Sie]] este forma de politețe: dumneavoastră.",
+  "Verbul a fi, complet: [[ich bin]], [[du bist]], [[er ist]], [[wir sind]], [[ihr seid]], [[sie sind]].",
+  "Ca să spui ce îți place să faci, pui [[gern]] după verb: [[Ich schwimme gern]], adică îmi place să înot. Pentru contrariu: [[Ich tanze nicht gern]], adică nu-mi place să dansez.",
+  "Regula de aur a germanei: în propoziția obișnuită, verbul stă mereu pe locul doi! [[Laura klettert gern]]. [[Am Sonntag spielt Laura Tennis]].",
+  "Întrebările cu cuvânt întrebător încep cu el, iar verbul vine imediat după: [[Was machst du gern?]] Întrebările la care răspunzi cu da sau nu încep cu verbul: [[Spielst du gern Tennis?]] Răspunsul: [[Ja!]] sau [[Nein!]]",
+  "Ca să propui ceva: [[Spielen wir Fußball?]] Ca să accepți: [[Gute Idee!]] Ca să refuzi: [[Nein, keine Lust.]]"
+ ],
+ vocab:[
+  "schwimmen|a înota","klettern|a se cățăra","tanzen|a dansa","singen|a cânta (cu vocea)","Gitarre spielen|a cânta la chitară","Klavier spielen|a cânta la pian","Fußball spielen|a juca fotbal","Tennis spielen|a juca tenis","Basketball spielen|a juca baschet","Volleyball spielen|a juca volei","Tischtennis spielen|a juca tenis de masă","malen|a picta","reiten|a călări","skaten|a merge pe skateboard","fotografieren|a fotografia","Musik hören|a asculta muzică","Computerspiele spielen|a juca jocuri pe calculator",
+  "das Hobby|hobby-ul","der Sport|sportul","gern|cu plăcere","nicht gern|fără plăcere","zusammen|împreună","Was machst du gern?|Ce-ți place să faci?","Gute Idee!|Idee bună!","Keine Lust.|N-am chef.","Ja|Da","Nein|Nu"
+ ],
+ sentences:[
+  "Laura klettert gern.|Laurei îi place să se cațere.","Wir spielen gern Fußball.|Nouă ne place să jucăm fotbal.","Spielst du gern Tennis?|Îți place să joci tenis?","Was machst du gern?|Ce-ți place să faci?","Ihr seid super!|Voi sunteți super!","Er singt nicht gern.|Lui nu-i place să cânte."
+ ],
+ conj:[
+  {v:"spielen",ro:"a juca",f:{ich:"spiele",du:"spielst","er/sie":"spielt",wir:"spielen",ihr:"spielt","sie/Sie":"spielen"}},
+  {v:"klettern",ro:"a se cățăra",f:{ich:"klettere",du:"kletterst","er/sie":"klettert",wir:"klettern",ihr:"klettert","sie/Sie":"klettern"}},
+  {v:"singen",ro:"a cânta",f:{ich:"singe",du:"singst","er/sie":"singt",wir:"singen",ihr:"singt","sie/Sie":"singen"}},
+  {v:"sein",ro:"a fi",f:{ich:"bin",du:"bist","er/sie":"ist",wir:"sind",ihr:"seid","sie/Sie":"sind"}}
+ ],
+ dialog:[
+  "A|Was machst du gern?|Ce-ți place să faci?",
+  "B|Ich schwimme gern. Und du?|Îmi place să înot. Și ție?",
+  "A|Ich spiele gern Basketball.|Mie îmi place să joc baschet.",
+  "B|Spielen wir zusammen Basketball?|Jucăm baschet împreună?",
+  "A|Gute Idee! Spielst du auch gern Tennis?|Idee bună! Îți place să joci și tenis?",
+  "B|Nein, nicht so gern.|Nu, nu prea."
+ ],
+ extra:[],
+ tutor:"Vorbește despre hobby-uri: ce îți place și ce nu îți place să faci (gern / nicht gern). Fă și acceptă propuneri (Spielen wir ...? Gute Idee! / Keine Lust)."
+},
+{
+ id:"l3", nr:"Lecția 3", title:"Das machen Freunde zusammen", ro:"Unde locuiești? Țări. Negația nicht",
+ color:"#10b981",
+ explain:[
+  "Multe verbe sunt regulate și se conjugă exact ca [[spielen]]: [[wohnen]] înseamnă a locui, [[hören]] înseamnă a asculta, [[trinken]] înseamnă a bea. Schimbi doar terminația: [[ich wohne]], [[du wohnst]], [[er wohnt]], [[wir wohnen]], [[ihr wohnt]], [[sie wohnen]].",
+  "Atenție la [[tanzen]]: cu du spunem [[du tanzt]], pentru că „z” se aude deja ca „ț”.",
+  "Ca să spui unde locuiești sau unde se află ceva, folosești [[in]] și numele orașului sau al țării: [[Ich wohne in Chișinău]]. [[Wien liegt in Österreich]].",
+  "Unele țări au articol, de exemplu [[die Schweiz]]. Atunci spunem [[in der Schweiz]].",
+  "Negația se face cu [[nicht]]: [[Ich wohne nicht in Berlin]]. [[Paul tanzt nicht gern]].",
+  "Ca să întrebi cum se simte cineva: [[Wie geht's?]] Răspunsuri posibile: [[Super!]], [[Gut!]], [[Es geht.]], adică așa și așa, sau [[Nicht so gut.]]",
+  "Iar dacă nu știi răspunsul: [[Keine Ahnung!]], adică habar n-am!"
+ ],
+ vocab:[
+  "wohnen|a locui","hören|a asculta","trinken|a bea","chatten|a vorbi pe chat","telefonieren|a vorbi la telefon","surfen|a face surf","liegen|a se afla",
+  "Deutschland|Germania","Österreich|Austria","die Schweiz|Elveția","Rumänien|România","die Republik Moldau|Republica Moldova","Italien|Italia","Spanien|Spania","Frankreich|Franța","England|Anglia",
+  "die Stadt|orașul","das Land|țara","die Musik|muzica","Wo wohnst du?|Unde locuiești?","Wo liegt Wien?|Unde se află Viena?","Es geht.|Așa și așa.","Nicht so gut.|Nu prea bine.","Keine Ahnung!|Habar n-am!","nicht|nu"
+ ],
+ sentences:[
+  "Ich wohne in Chișinău.|Eu locuiesc în Chișinău.","Wien liegt in Österreich.|Viena se află în Austria.","Wir hören gern Musik.|Nouă ne place să ascultăm muzică.","Sie wohnt nicht in Berlin.|Ea nu locuiește în Berlin.","Wo wohnst du?|Unde locuiești?","Paul tanzt nicht gern.|Lui Paul nu-i place să danseze."
+ ],
+ conj:[
+  {v:"wohnen",ro:"a locui",f:{ich:"wohne",du:"wohnst","er/sie":"wohnt",wir:"wohnen",ihr:"wohnt","sie/Sie":"wohnen"}},
+  {v:"hören",ro:"a asculta",f:{ich:"höre",du:"hörst","er/sie":"hört",wir:"hören",ihr:"hört","sie/Sie":"hören"}},
+  {v:"tanzen",ro:"a dansa",f:{ich:"tanze",du:"tanzt","er/sie":"tanzt",wir:"tanzen",ihr:"tanzt","sie/Sie":"tanzen"}},
+  {v:"trinken",ro:"a bea",f:{ich:"trinke",du:"trinkst","er/sie":"trinkt",wir:"trinken",ihr:"trinkt","sie/Sie":"trinken"}}
+ ],
+ dialog:[
+  "A|Hallo! Wie geht's?|Salut! Ce mai faci?",
+  "B|Super, danke! Und dir?|Super, mulțumesc! Și tu?",
+  "A|Es geht. Wo wohnst du?|Așa și așa. Unde locuiești?",
+  "B|Ich wohne in Chișinău. Und du?|Eu locuiesc în Chișinău. Și tu?",
+  "A|Ich wohne in Graz. Graz liegt in Österreich.|Eu locuiesc în Graz. Graz se află în Austria.",
+  "B|Toll! Hörst du gern Musik?|Grozav! Îți place să asculți muzică?",
+  "A|Ja, sehr gern!|Da, foarte mult!"
+ ],
+ extra:[],
+ tutor:"Spune unde locuiești, unde se află orașe și țări (in + oraș/țară), cum te simți (Wie geht's?) și folosește negația nicht."
+},
+{
+ id:"l4", nr:"Lecția 4", title:"Simon liebt Informatik", ro:"Școala, materiile, limbile",
+ color:"#8b5cf6",
+ explain:[
+  "Materiile de la școală: [[Mathe]], [[Deutsch]], [[Englisch]], [[Biologie]], [[Kunst]], [[Sport]], [[Informatik]]. De obicei le spunem fără articol: [[Ich habe Mathe]].",
+  "Ca să spui ce părere ai, folosești verbul [[finden]]: [[Ich finde Mathe super]]. [[Ich finde Kunst langweilig]]. Atenție: [[du findest]], [[er findet]] — adăugăm un „e” ca să se poată pronunța ușor.",
+  "Verbul [[sprechen]], a vorbi, își schimbă vocala la du și la er sau sie: [[ich spreche]], dar [[du sprichst]], [[er spricht]]. La plural revine: [[wir sprechen]].",
+  "Verbul [[haben]], a avea: [[ich habe]], [[du hast]], [[er hat]], [[wir haben]], [[ihr habt]], [[sie haben]].",
+  "Numele limbilor se termină des în „isch”: [[Englisch]], [[Rumänisch]], [[Russisch]], [[Spanisch]]. Excepția este [[Deutsch]].",
+  "Zilele se spun cu [[am]]: [[Am Montag habe ich Mathe]]. Observă că verbul [[habe]] rămâne pe locul doi, iar [[ich]] trece după verb!",
+  "Cuvântul special [[doch]] înseamnă „ba da”. Îl folosești când întrebarea are negație: [[Sprichst du nicht Englisch?]] Răspuns: [[Doch!]]"
+ ],
+ vocab:[
+  "Mathe|matematica","Deutsch|germana","Englisch|engleza","Rumänisch|româna","Russisch|rusa","Französisch|franceza","Biologie|biologia","Geschichte|istoria","Geografie|geografia","Physik|fizica","Kunst|desenul / arta","Musik|muzica","Sport|educația fizică","Informatik|informatica",
+  "der Stundenplan|orarul","die Pause|pauza","die Schule|școala","das Lieblingsfach|materia preferată","finden|a considera / a găsi","sprechen|a vorbi","haben|a avea","lieben|a iubi","interessant|interesant","langweilig|plictisitor","schwer|greu","leicht|ușor","doch|ba da","ein bisschen|puțin"
+ ],
+ sentences:[
+  "Ich finde Mathe super.|Mi se pare matematica super.","Am Montag habe ich Sport.|Lunea am educație fizică.","Simon liebt Informatik.|Simon iubește informatica.","Sprichst du Englisch?|Vorbești engleză?","Er spricht Deutsch und Rumänisch.|El vorbește germană și română.","Wir haben heute Biologie.|Azi avem biologie."
+ ],
+ conj:[
+  {v:"finden",ro:"a considera",f:{ich:"finde",du:"findest","er/sie":"findet",wir:"finden",ihr:"findet","sie/Sie":"finden"}},
+  {v:"sprechen",ro:"a vorbi",f:{ich:"spreche",du:"sprichst","er/sie":"spricht",wir:"sprechen",ihr:"sprecht","sie/Sie":"sprechen"}},
+  {v:"haben",ro:"a avea",f:{ich:"habe",du:"hast","er/sie":"hat",wir:"haben",ihr:"habt","sie/Sie":"haben"}}
+ ],
+ dialog:[
+  "A|Was hast du am Montag?|Ce ai lunea?",
+  "B|Am Montag habe ich Mathe und Deutsch.|Lunea am matematică și germană.",
+  "A|Wie findest du Mathe?|Cum ți se pare matematica?",
+  "B|Ich finde Mathe toll! Und du?|Mi se pare grozavă! Și ție?",
+  "A|Ich finde Mathe schwer. Sprichst du Englisch?|Mie mi se pare grea. Vorbești engleză?",
+  "B|Ja, und ich spreche ein bisschen Deutsch.|Da, și vorbesc puțin germana."
+ ],
+ extra:[],
+ tutor:"Vorbește despre școală: orarul (am Montag ...), materiile și părerea ta (Ich finde ... super/langweilig), limbile pe care le vorbești, răspunsul cu doch."
+},
+{
+ id:"l5", nr:"Lecția 5", title:"Ich brauche einen Kuli", ro:"Rechizite. ein, eine, einen. möchten",
+ color:"#ec4899",
+ explain:[
+  "Articolul nehotărât, adică „un” sau „o”: [[ein]] pentru masculin și neutru, [[eine]] pentru feminin. [[der Kuli]] devine [[ein Kuli]], [[die Schere]] devine [[eine Schere]], [[das Heft]] devine [[ein Heft]].",
+  "Acuzativul este forma pentru lucrul pe care îl ai, îl vrei sau de care ai nevoie. Vestea bună: se schimbă doar masculinul! [[der]] devine [[den]], iar [[ein]] devine [[einen]].",
+  "Comparați: [[Ich brauche einen Kuli]]. [[Ich brauche eine Schere]]. [[Ich brauche ein Heft]]. Doar la masculin apare terminația „en”.",
+  "Verbe care cer acuzativul: [[brauchen]], a avea nevoie, [[haben]], a avea, [[möchten]], aș vrea, [[kaufen]], a cumpăra, [[suchen]], a căuta.",
+  "[[möchten]] este felul politicos de a cere ceva: [[ich möchte]], [[du möchtest]], [[er möchte]], [[wir möchten]], [[ihr möchtet]], [[sie möchten]]. Observă: la er și sie nu apare „t”.",
+  "Ca să numești ceva: [[Was ist das?]] Răspuns: [[Das ist ein Roboter]]. Ca să întrebi despre o persoană: [[Wer ist das?]]"
+ ],
+ vocab:[
+  "der Kuli|pixul","der Bleistift|creionul","der Radiergummi|guma de șters","der Spitzer|ascuțitoarea","der Block|blocnotesul","der Filzstift|carioca","der Kleber|lipiciul","das Lineal|rigla","das Heft|caietul","das Buch|cartea","das Mäppchen|penarul","das Papier|hârtia","die Schere|foarfeca","die Schultasche|ghiozdanul","die Tafel|tabla",
+  "der Roboter|robotul","das Raumschiff|nava spațială","der Planet|planeta",
+  "brauchen|a avea nevoie","kaufen|a cumpăra","suchen|a căuta","möchten|a dori (politicos)","Hast du einen Kuli?|Ai un pix?","Nein, leider nicht.|Nu, din păcate.","Hier, bitte!|Poftim!"
+ ],
+ sentences:[
+  "Ich brauche einen Kuli.|Am nevoie de un pix.","Hast du eine Schere?|Ai o foarfecă?","Ich möchte ein Heft.|Aș vrea un caiet.","Er sucht den Radiergummi.|El caută guma.","Das ist ein Roboter.|Acesta este un robot.","Wir kaufen einen Block.|Noi cumpărăm un blocnotes."
+ ],
+ conj:[
+  {v:"möchten",ro:"a dori",f:{ich:"möchte",du:"möchtest","er/sie":"möchte",wir:"möchten",ihr:"möchtet","sie/Sie":"möchten"}},
+  {v:"brauchen",ro:"a avea nevoie",f:{ich:"brauche",du:"brauchst","er/sie":"braucht",wir:"brauchen",ihr:"braucht","sie/Sie":"brauchen"}},
+  {v:"suchen",ro:"a căuta",f:{ich:"suche",du:"suchst","er/sie":"sucht",wir:"suchen",ihr:"sucht","sie/Sie":"suchen"}}
+ ],
+ dialog:[
+  "A|Hast du einen Kuli?|Ai un pix?",
+  "B|Nein, leider nicht. Ich habe einen Bleistift.|Nu, din păcate. Am un creion.",
+  "A|Danke! Und hast du auch ein Lineal?|Mulțumesc! Și ai și o riglă?",
+  "B|Ja, hier bitte!|Da, poftim!",
+  "A|Ich möchte auch eine Schere.|Aș vrea și o foarfecă.",
+  "B|Eine Schere habe ich nicht.|Foarfecă nu am."
+ ],
+ extra:["akk"],
+ tutor:"Cere și împrumută rechizite: Ich brauche einen/eine/ein ..., Hast du ...?, Ich möchte ... Exersează acuzativul (einen la masculin)."
+},
+{
+ id:"l6", nr:"Lecția 6", title:"Hast du Zeit?", ro:"Ora, momentele zilei. können, müssen",
+ color:"#0ea5e9",
+ explain:[
+  "Verbele modale [[können]], a putea, și [[müssen]], a trebui, sunt neregulate: [[ich kann]], [[du kannst]], [[er kann]], [[wir können]], [[ihr könnt]], [[sie können]].",
+  "[[ich muss]], [[du musst]], [[er muss]], [[wir müssen]], [[ihr müsst]], [[sie müssen]]. Observă: la ich și la er forma este aceeași!",
+  "Regula parantezei: verbul modal stă pe locul doi, iar al doilea verb merge la sfârșitul propoziției: [[Ich muss heute Mathe lernen]]. [[Kannst du am Samstag kommen?]]",
+  "Momentele zilei se spun cu [[am]]: [[am Morgen]], [[am Vormittag]], [[am Mittag]], [[am Nachmittag]], [[am Abend]]. Excepție: [[in der Nacht]].",
+  "Ora se spune cu [[um]]: [[um drei Uhr]], adică la ora trei. Întrebarea este [[Wann?]] sau [[Um wie viel Uhr?]]",
+  "Ora în vorbirea de zi cu zi: [[Viertel nach drei]] înseamnă trei și un sfert. [[Viertel vor vier]] înseamnă patru fără un sfert. Mare atenție: [[halb vier]] înseamnă trei și jumătate, nu patru și jumătate! Nemții spun „jumătate spre patru”.",
+  "Cum stabilești o întâlnire: [[Hast du Zeit?]] Răspuns: [[Ja, klar!]] sau [[Nein, leider nicht. Ich muss lernen.]]"
+ ],
+ vocab:[
+  "der Morgen|dimineața","der Vormittag|înainte de prânz","der Mittag|amiaza","der Nachmittag|după-amiaza","der Abend|seara","die Nacht|noaptea","heute|astăzi","morgen|mâine","jetzt|acum","die Zeit|timpul","die Uhr|ceasul / ora",
+  "können|a putea","müssen|a trebui","lernen|a învăța","üben|a exersa","Hausaufgaben machen|a face temele","ins Kino gehen|a merge la cinema","Freunde treffen|a se întâlni cu prietenii",
+  "Hast du Zeit?|Ai timp?","leider|din păcate","Wann?|Când?","Um wie viel Uhr?|La ce oră?","Wie spät ist es?|Cât e ceasul?","Klar!|Sigur!","Bis morgen!|Pe mâine!"
+ ],
+ sentences:[
+  "Ich muss heute Mathe lernen.|Azi trebuie să învăț matematică.","Kannst du am Samstag kommen?|Poți să vii sâmbătă?","Am Nachmittag habe ich Zeit.|După-amiază am timp.","Wir gehen um vier Uhr ins Kino.|Mergem la ora patru la cinema.","Es ist halb vier.|Este trei și jumătate.","Ich kann leider nicht.|Din păcate nu pot."
+ ],
+ conj:[
+  {v:"können",ro:"a putea",f:{ich:"kann",du:"kannst","er/sie":"kann",wir:"können",ihr:"könnt","sie/Sie":"können"}},
+  {v:"müssen",ro:"a trebui",f:{ich:"muss",du:"musst","er/sie":"muss",wir:"müssen",ihr:"müsst","sie/Sie":"müssen"}}
+ ],
+ dialog:[
+  "A|Hast du heute Zeit?|Ai timp azi?",
+  "B|Heute kann ich nicht. Ich muss lernen.|Azi nu pot. Trebuie să învăț.",
+  "A|Und morgen?|Și mâine?",
+  "B|Morgen am Nachmittag habe ich Zeit.|Mâine după-amiază am timp.",
+  "A|Super! Um wie viel Uhr?|Super! La ce oră?",
+  "B|Um vier Uhr. Gehen wir ins Kino?|La ora patru. Mergem la cinema?",
+  "A|Gute Idee! Bis morgen!|Idee bună! Pe mâine!"
+ ],
+ extra:["clock"],
+ tutor:"Stabilește o întâlnire: Hast du Zeit? Kannst du ...? Ich muss ... Folosește momentele zilei (am Nachmittag) și ora (um vier Uhr, halb vier)."
+}
+];
+
+/* ===== storage ===== */
+const KEY="bf_a11_v1";
+let S={name:"",prog:{},mist:{},streak:0,last:"",rateDe:0.85,showRo:true};
+try{const s=localStorage.getItem(KEY);if(s)S=Object.assign(S,JSON.parse(s));}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+function touchDay(){const d=new Date().toISOString().slice(0,10);if(S.last===d)return;const y=new Date(Date.now()-864e5).toISOString().slice(0,10);S.streak=(S.last===y)?S.streak+1:1;S.last=d;save();}
+
+/* ===== helpers ===== */
+const $=s=>document.querySelector(s);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuf=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const pair=s=>{const[p,q]=s.split("|");return{de:p,ro:q};};
+const art=de=>{const m=de.match(/^(der|die|das) (.+)$/);return m?{a:m[1],n:m[2]}:null;};
+const artCls=de=>{const a=art(de);return a?("a-"+a.a):"";};
+function norm(t){return t.toLowerCase().replace(/[.,!?¿¡;:"'„“”…–-]/g," ").replace(/\s+/g," ").trim();}
+function umlautFold(t){return t.replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/ß/g,"ss");}
+function lev(a,b){const m=a.length,n=b.length;if(!m)return n;if(!n)return m;let p=[...Array(n+1).keys()];for(let i=1;i<=m;i++){let c=[i];for(let j=1;j<=n;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1));p=c;}return p[n];}
+function sim(a,b){a=umlautFold(norm(a));b=umlautFold(norm(b));const L=Math.max(a.length,b.length)||1;return 1-lev(a,b)/L;}
+
+/* ===== capabilities (Claude) ===== */
+const CAP={tts:null,dict:null,sample:null};
+(async()=>{if(!(window.claude&&claude.use))return;
+ try{CAP.tts=await claude.use("tts");}catch(e){}
+ try{CAP.dict=await claude.use("dictation");if(CAP.dict)setupDict();}catch(e){}
+ try{CAP.sample=await claude.use("sample");}catch(e){}
+ render();})();
+
+/* ===== voice output ===== */
+let VOICES=[];
+function loadVoices(){try{VOICES=speechSynthesis.getVoices()||[];}catch(e){VOICES=[];}}
+if("speechSynthesis" in window){loadVoices();speechSynthesis.onvoiceschanged=loadVoices;}
+function voiceFor(lang){const p=lang.slice(0,2);const vs=VOICES.filter(v=>v.lang&&v.lang.replace("_","-").toLowerCase().startsWith(p));
+ return vs.find(v=>/google|natural|premium|enhanced/i.test(v.name))||vs[0]||null;}
+let speakToken=0;
+function stopSpeak(){speakToken++;try{speechSynthesis.cancel();}catch(e){}try{CAP.tts&&CAP.tts.stop();}catch(e){}document.querySelectorAll(".speaking").forEach(e=>e.classList.remove("speaking"));}
+function sayOne(text,lang,tok){return new Promise(res=>{
+ if(tok!==speakToken)return res();
+ const v=("speechSynthesis" in window)?voiceFor(lang):null;
+ if(v){const u=new SpeechSynthesisUtterance(text);u.voice=v;u.lang=v.lang;u.rate=lang==="de"?S.rateDe:1;
+  u.onend=()=>res();u.onerror=()=>res();speechSynthesis.speak(u);
+  const t=setTimeout(res,Math.max(4000,text.length*180));u.onend=()=>{clearTimeout(t);res();};return;}
+ if(CAP.tts){CAP.tts.speak(text,{language:lang,rate:lang==="de"?Math.max(.7,S.rateDe):1}).then(res,res);return;}
+ res();});}
+async function say(parts){ // parts: [{t,l}] or string(de)
+ stopSpeak();const tok=speakToken;if(typeof parts==="string")parts=[{t:parts,l:"de"}];
+ for(const p of parts){if(tok!==speakToken)return;if(p.el)p.el.classList.add("speaking");await sayOne(p.t,p.l,tok);if(p.el)p.el.classList.remove("speaking");}
+}
+function sayDe(t){return say([{t,l:"de"}]);}
+function splitMixed(s){const out=[];s.split(/(\[\[.+?\]\])/).forEach(x=>{if(!x.trim())return;const m=x.match(/^\[\[(.+)\]\]$/);if(m)out.push({t:m[1],l:"de"});else x.replace(/[„”"]/g,"").split(/(?<=[.!?:])\s+/).forEach(y=>{if(y.trim()&&/[\p{L}\d]/u.test(y))out.push({t:y.trim(),l:"ro"});});});return out;}
+function mixedHTML(s){return esc(s).replace(/\[\[(.+?)\]\]/g,(m,g)=>`<span class="de" data-say="${g}">${g}</span>`);}
+
+/* ===== voice input ===== */
+const NativeSR=window.SpeechRecognition||window.webkitSpeechRecognition;
+let nativeBroken=(function(){try{return window.self!==window.top;}catch(e){return true;}})(),listenCb=null,dictBuf="";
+function setupDict(){const d=CAP.dict;
+ d.onPartial&&d.onPartial(({text})=>{if(listenCb)listenCb.partial(dictBuf+" "+text);});
+ d.onFinal&&d.onFinal(({text})=>{dictBuf+=" "+text;if(listenCb)listenCb.partial(dictBuf);});
+ d.onState&&d.onState(({state})=>{if(state==="idle"&&listenCb){const cb=listenCb;listenCb=null;cb.done(dictBuf.trim());}});}
+function canListen(){return !!CAP.dict||(NativeSR&&!nativeBroken);}
+// must be called directly from click
+function listen(onPartial){return new Promise(resolve=>{
+ stopSpeak();
+ if(CAP.dict){dictBuf="";listenCb={partial:onPartial,done:resolve};
+  CAP.dict.start().catch(e=>{listenCb=null;if(e&&e.code==="not_granted")CAP.dict=null;resolve(null);});
+  setTimeout(()=>{try{CAP.dict&&CAP.dict.stop();}catch(e){}},9000);return;}
+ if(NativeSR&&!nativeBroken){const r=new NativeSR();r.lang="de-DE";r.interimResults=true;r.maxAlternatives=1;let txt="",fin=false;
+  r.onresult=e=>{txt="";for(let i=0;i<e.results.length;i++)txt+=e.results[i][0].transcript;onPartial&&onPartial(txt);};
+  r.onerror=e=>{if(/not-allowed|service-not-allowed/.test(e.error)){nativeBroken=true;}if(!fin){fin=true;resolve(txt||null);}};
+  r.onend=()=>{if(!fin){fin=true;resolve(txt);}};
+  try{r.start();window._sr=r;}catch(e){nativeBroken=true;resolve(null);}return;}
+ resolve(null);});}
+function stopListen(){try{CAP.dict&&CAP.dict.stop();}catch(e){}try{window._sr&&window._sr.stop();}catch(e){}}
+
+/* ===== routing ===== */
+let VIEW={v:"home"};
+function go(v){stopSpeak();VIEW=v;render();window.scrollTo(0,0);}
+const L=id=>LESSONS.find(l=>l.id===id);
+
+const ACTS=[
+ {id:"explain",g:1,ic:"📖",t:"Explicația",d:"Ascultă regula în română"},
+ {id:"vocab",g:1,ic:"🃏",t:"Cuvinte",d:"Carduri cu voce"},
+ {id:"quiz",g:2,ic:"✅",t:"Ce înseamnă?",d:"Alege traducerea",ex:1},
+ {id:"listen",g:2,ic:"👂",t:"Ascultă și alege",d:"Înțelegere după auz",ex:1},
+ {id:"article",g:2,ic:"🎨",t:"der, die, das",d:"Alege articolul",ex:1,need:l=>l.vocab.some(v=>art(pair(v).de))},
+ {id:"numbers",g:2,ic:"🔢",t:"Numere 0–20",d:"Ascultă și scrie cifra",ex:1,need:l=>l.extra.includes("numbers")},
+ {id:"akk",g:2,ic:"🧩",t:"ein, eine, einen",d:"Acuzativul",ex:1,need:l=>l.extra.includes("akk")},
+ {id:"clock",g:2,ic:"🕒",t:"Cât e ceasul?",d:"Ora în germană",ex:1,need:l=>l.extra.includes("clock")},
+ {id:"dictation",g:3,ic:"✍️",t:"Dictare",d:"Ascultă și scrie",ex:1},
+ {id:"translate",g:3,ic:"🔁",t:"Tradu în germană",d:"Scrie singur",ex:1},
+ {id:"builder",g:3,ic:"🧱",t:"Construiește propoziția",d:"Ordinea cuvintelor",ex:1},
+ {id:"conj",g:3,ic:"🔤",t:"Conjugare",d:"Scrie forma verbului",ex:1,need:l=>l.conj.length},
+ {id:"speak",g:4,ic:"🎤",t:"Repetă după mine",d:"Pronunție",ex:1},
+ {id:"dialog",g:4,ic:"💬",t:"Dialog",d:"Joacă un rol"},
+ {id:"tutor",g:4,ic:"🤖",t:"Vorbește cu tutorele",d:"Conversație liberă (AI)",need:()=>!!CAP.sample}
+];
+const GROUPS={1:"1 · Învăț",2:"2 · Exersez",3:"3 · Scriu",4:"4 · Vorbesc"};
+function starsOf(lid,aid){return (S.prog[lid]||{})[aid]||0;}
+function lessonPct(l){const acts=ACTS.filter(a=>a.ex&&(!a.need||a.need(l)));const s=acts.reduce((x,a)=>x+starsOf(l.id,a.id),0);return Math.round(100*s/(acts.length*3));}
+function starStr(n){return "★".repeat(n)+"☆".repeat(3-n);}
+
+/* ===== render ===== */
+function render(){const app=$("#app");
+ const V=VIEW;
+ if(!S.name&&V.v==="home"){app.innerHTML=nameScreen();bindName();return;}
+ if(V.v==="home")app.innerHTML=home();
+ else if(V.v==="lesson")app.innerHTML=lessonScreen(L(V.l));
+ else if(V.v==="explain")app.innerHTML=explainScreen(L(V.l));
+ else if(V.v==="vocab")app.innerHTML=vocabScreen(L(V.l));
+ else if(V.v==="dialog")app.innerHTML=dialogScreen(L(V.l));
+ else if(V.v==="ex")app.innerHTML=exScreen();
+ else if(V.v==="tutor")app.innerHTML=tutorScreen();
+ else if(V.v==="ask")app.innerHTML=askScreen();
+ else if(V.v==="settings")app.innerHTML=settingsScreen();
+ bindCommon();
+ if(V.v==="ex")bindEx();
+ if(V.v==="tutor"||V.v==="ask")bindChat();
+}
+function topBar(title,back){return `<div class="top">${back?`<button class="back" data-go='${back}'>‹</button>`:""}<div class="ttl">${title}</div><button class="ic" data-act="stop" title="Oprește vocea">🔇</button></div>`;}
+
+function nameScreen(){return `<div class="welcome"><div class="big">🇩🇪</div><h1>Deutsch mit Freunde</h1><p>Germana pas cu pas, după manualul <b>Beste Freunde A1.1</b>, cu explicații în română.</p>
+<label>Cum te numești?</label><input id="nm" placeholder="Numele tău" autocomplete="off"><button class="btn primary" id="nmok">Începem! 🚀</button></div>`;}
+function bindName(){$("#nmok").onclick=()=>{const v=$("#nm").value.trim();if(!v)return;S.name=v;save();say([{t:"Bună, "+v+"! Hai să învățăm germana împreună.",l:"ro"},{t:"Los geht's!",l:"de"}]);render();};}
+
+function home(){touchDay();const mcount=Object.keys(S.mist).length;
+ return `<div class="hero"><div><div class="hi">Hallo, ${esc(S.name)}! 👋</div><div class="sub">🔥 ${S.streak} ${S.streak===1?"zi":"zile"} la rând</div></div><button class="ic light" data-go='{"v":"settings"}'>⚙️</button></div>
+ <div class="pad">
+ <div class="path">${LESSONS.map((l,i)=>{const p=lessonPct(l);return `<button class="lcard" style="--c:${l.color}" data-go='{"v":"lesson","l":"${l.id}"}'>
+   <div class="lnr">${l.nr}</div><div class="lt">${esc(l.title)}</div><div class="lro">${esc(l.ro)}</div>
+   <div class="bar"><i style="width:${p}%"></i></div><div class="pct">${p}%</div></button>`;}).join("")}</div>
+ <div class="row2">
+  <button class="tile" ${mcount?"":"disabled"} data-act="review"><div class="ti">🔁</div><b>Recapitulare</b><small>${mcount?mcount+" cuvinte de repetat":"Nicio greșeală încă"}</small></button>
+  ${CAP.sample?"":"<!--"}<button class="tile" data-go='{"v":"ask"}'><div class="ti">🙋</div><b>Întreabă profesorul</b><small>Orice întrebare, în română</small></button>${CAP.sample?"":"-->"}
+ </div>
+ <p class="hint">Sfat: parcurge lecțiile în ordinea din manual. La fiecare lecție: 1 Învăț → 2 Exersez → 3 Scriu → 4 Vorbesc. Ținta: 3 stele ★★★ la fiecare exercițiu.</p>
+ </div>`;}
+
+function lessonScreen(l){const acts=ACTS.filter(a=>!a.need||a.need(l));
+ return topBar(l.nr,'{"v":"home"}')+`<div class="lhead" style="--c:${l.color}"><h2>${esc(l.title)}</h2><p>${esc(l.ro)}</p></div><div class="pad">`+
+ [1,2,3,4].map(g=>`<h3 class="gh">${GROUPS[g]}</h3><div class="acts">${acts.filter(a=>a.g===g).map(a=>{
+  const go=a.ex?`{"v":"ex","l":"${l.id}","a":"${a.id}"}`:`{"v":"${a.id}","l":"${l.id}"}`;
+  return `<button class="act" data-go='${go}'><span class="aic">${a.ic}</span><span class="atx"><b>${a.t}</b><small>${a.d}</small></span>${a.ex?`<span class="st">${starStr(starsOf(l.id,a.id))}</span>`:""}</button>`;}).join("")}</div>`).join("")+`</div>`;}
+
+function explainScreen(l){return topBar("Explicația",`{"v":"lesson","l":"${l.id}"}`)+`<div class="pad">
+ <button class="btn primary wide" data-act="readall">▶ Ascultă toată explicația</button>
+ <p class="hint">Apasă pe orice cuvânt <span class="de">german</span> ca să-l auzi.</p>
+ ${l.explain.map((p,i)=>`<div class="para" data-i="${i}"><button class="pl" data-para="${i}">▶</button><p>${mixedHTML(p)}</p></div>`).join("")}
+ ${l.conj.length?`<h3 class="gh">Tabele de conjugare</h3>${l.conj.map(c=>`<div class="conj"><div class="ch"><span class="de" data-say="${c.v}">${c.v}</span> — ${esc(c.ro)}</div>${Object.entries(c.f).map(([p,f])=>`<div class="cr" data-say="${p.split("/")[0]} ${f}"><span>${p}</span><b>${f}</b></div>`).join("")}</div>`).join("")}`:""}
+ <button class="btn wide" data-go='{"v":"vocab","l":"${l.id}"}'>Mai departe: Cuvinte →</button></div>`;}
+
+function vocabScreen(l){return topBar("Cuvinte",`{"v":"lesson","l":"${l.id}"}`)+`<div class="pad">
+ <button class="btn primary wide" data-act="readvocab">▶ Ascultă toate (germană + română)</button>
+ <div class="legend"><span class="a-der">der</span><span class="a-die">die</span><span class="a-das">das</span></div>
+ <div class="cards">${l.vocab.map(v=>{const p=pair(v);return `<button class="vc ${artCls(p.de)}" data-say="${esc(p.de)}"><b>${esc(p.de)}</b><small>${esc(p.ro)}</small></button>`;}).join("")}</div>
+ <h3 class="gh">Propoziții model</h3>
+ ${l.sentences.map(s=>{const p=pair(s);return `<button class="sent" data-say="${esc(p.de)}"><b>🔊 ${esc(p.de)}</b><small>${esc(p.ro)}</small></button>`;}).join("")}
+ <button class="btn wide" data-go='{"v":"ex","l":"${l.id}","a":"quiz"}'>Mai departe: Exersez →</button></div>`;}
+
+/* ---- dialog (role play) ---- */
+let DLG={i:0,role:"B",hide:false,res:{}};
+function dialogScreen(l){const lines=l.dialog.map(x=>{const[w,de,ro]=x.split("|");return{w,de,ro};});
+ return topBar("Dialog",`{"v":"lesson","l":"${l.id}"}`)+`<div class="pad">
+ <div class="seg"><button class="${DLG.role==="none"?"on":""}" data-role="none">Doar ascult</button><button class="${DLG.role==="A"?"on":""}" data-role="A">Eu sunt A</button><button class="${DLG.role==="B"?"on":""}" data-role="B">Eu sunt B</button></div>
+ <label class="chk"><input type="checkbox" id="hideDe" ${DLG.hide?"checked":""}> Ascunde textul german al rolului meu (nivel avansat)</label>
+ <button class="btn primary wide" data-act="dlgplay">▶ Pornește dialogul</button>
+ <div class="dlg">${lines.map((x,i)=>{const mine=x.w===DLG.role;const r=DLG.res[i];return `<div class="bub ${x.w==="A"?"left":"right"} ${mine?"mine":""}" id="dl${i}">
+  <div class="who">${x.w}${mine?" · tu":""}</div>
+  <div class="dde ${mine&&DLG.hide?"blur":""}" data-say="${esc(x.de)}">${esc(x.de)}</div><div class="dro">${esc(x.ro)}</div>
+  ${mine?`<div class="mrow"><button class="mic" data-dmic="${i}">🎤 Spune</button><span class="heard" id="dh${i}">${r?esc(r):""}</span></div>`:""}</div>`;}).join("")}</div>
+ ${canListen()?"":`<p class="hint">Recunoașterea vocii nu e disponibilă aici: spune replica cu voce tare, apoi apasă „Spune” ca să treci mai departe.</p>`}
+ </div>`;}
+
+/* ===== exercises ===== */
+let EX=null;
+function allVocab(l){return l.vocab.map(pair);}
+function opts(correct,pool,n=4){const o=shuf(pool.filter(x=>x!==correct)).slice(0,n-1);o.push(correct);return shuf([...new Set(o)]);}
+const NUM=["null","eins","zwei","drei","vier","fünf","sechs","sieben","acht","neun","zehn","elf","zwölf","dreizehn","vierzehn","fünfzehn","sechzehn","siebzehn","achtzehn","neunzehn","zwanzig"];
+const NUMRO=["zero","unu","doi","trei","patru","cinci","șase","șapte","opt","nouă","zece","unsprezece","doisprezece"];
+function clockQ(){const h=1+Math.floor(Math.random()*12),m=pick([0,15,30,45]);const hn=x=>NUM[((x-1)%12)+1];
+ let de=m===0?(h===1?"ein":hn(h))+" Uhr":m===15?"Viertel nach "+hn(h):m===30?"halb "+hn(h+1):"Viertel vor "+hn(h+1);
+ const hr=x=>NUMRO[((x-1)%12)+1];let ro=m===0?"ora "+hr(h):m===15?hr(h)+" și un sfert":m===30?hr(h)+" și jumătate":hr(h+1)+" fără un sfert";
+ return{time:h+":"+String(m).padStart(2,"0"),de,ro};}
+function genQs(l,a){const V=l?allVocab(l):[];const N=10;let qs=[];
+ const words=V.filter(v=>v.de.split(" ").length<=3);
+ if(a==="quiz"){qs=shuf(V).slice(0,N).map((v,i)=>i%2?{k:"choice",prompt:v.ro,sub:"Alege în germană:",ans:v.de,opts:opts(v.de,V.map(x=>x.de)),say:v.de,item:v.de}:{k:"choice",prompt:v.de,sub:"Ce înseamnă?",ans:v.ro,opts:opts(v.ro,V.map(x=>x.ro)),say:v.de,sayFirst:true,item:v.de});}
+ if(a==="listen"){qs=shuf(V).slice(0,N).map(v=>({k:"choice",audio:v.de,sub:"Ascultă și alege traducerea:",ans:v.ro,opts:opts(v.ro,V.map(x=>x.ro)),say:v.de,item:v.de}));}
+ if(a==="article"){const ns=V.filter(v=>art(v.de));qs=shuf(ns).slice(0,N).map(v=>{const x=art(v.de);return{k:"choice",prompt:"___ "+x.n,sub:v.ro,ans:x.a,opts:["der","die","das"],say:v.de,item:v.de,art:true};});}
+ if(a==="numbers"){qs=shuf([...Array(21).keys()]).slice(0,N).map((n,i)=>i%2?{k:"type",audio:NUM[n],sub:"Scrie cifra pe care o auzi:",ans:String(n),num:true,say:NUM[n]}:{k:"type",prompt:String(n),sub:"Scrie numărul în germană:",ans:NUM[n],say:NUM[n]});}
+ if(a==="akk"){const ns=V.filter(v=>art(v.de)&&/(Kuli|Bleistift|Radiergummi|Spitzer|Block|Filzstift|Kleber|Lineal|Heft|Buch|Mäppchen|Schere|Schultasche|Roboter)/.test(v.de));
+  qs=shuf(ns).slice(0,N).map(v=>{const x=art(v.de);const a2={der:"einen",die:"eine",das:"ein"}[x.a];const verb=pick(["Ich brauche","Ich möchte","Hast du","Wir kaufen"]);const q=verb==="Hast du";
+   return{k:"choice",prompt:`${verb} ___ ${x.n}${q?"?":"."}`,sub:`${v.de} — ${v.ro}`,ans:a2,opts:["ein","eine","einen"],say:`${verb} ${a2} ${x.n}`,item:v.de};});}
+ if(a==="clock"){qs=[...Array(N)].map((_,i)=>{const c=clockQ();return i%2?{k:"choice",audio:c.de,sub:"Ascultă: cât e ceasul?",ans:c.time,opts:opts(c.time,[...Array(8)].map(()=>clockQ().time).concat(c.time)),say:c.de}:{k:"choice",prompt:"🕒 "+c.time,sub:`(${c.ro}) Cum se spune în germană?`,ans:c.de,opts:opts(c.de,[...Array(8)].map(()=>clockQ().de)),say:c.de};});}
+ if(a==="dictation"){qs=shuf(words).slice(0,7).concat(shuf(l.sentences.map(pair)).slice(0,3)).map(v=>({k:"type",audio:v.de,sub:"Ascultă și scrie exact ce auzi:",hint:v.ro,ans:v.de,say:v.de,item:v.de}));}
+ if(a==="translate"){qs=shuf(words).slice(0,6).concat(shuf(l.sentences.map(pair)).slice(0,4)).map(v=>({k:"type",prompt:v.ro,sub:"Scrie în germană:",ans:v.de,say:v.de,item:v.de}));}
+ if(a==="builder"){qs=shuf(l.sentences.map(pair)).slice(0,6).map(v=>({k:"build",prompt:v.ro,sub:"Pune cuvintele în ordine:",ans:v.de,tiles:shuf(v.de.replace(/[.!?]$/,"").split(" ")),end:(v.de.match(/[.!?]$/)||[""])[0],say:v.de}));}
+ if(a==="conj"){const it=[];l.conj.forEach(c=>Object.entries(c.f).forEach(([p,f])=>it.push({c,p,f})));
+  qs=shuf(it).slice(0,N).map(x=>{const pr=x.p.split("/")[0];return{k:"type",prompt:`${pr} ___`,sub:`${x.c.v} (${x.c.ro}) — scrie forma pentru „${x.p}”:`,ans:x.f,say:`${pr} ${x.f}`};});}
+ if(a==="speak"){const src=shuf(l.sentences.map(pair).concat(l.dialog.map(d=>{const[,de,ro]=d.split("|");return{de,ro};}))).slice(0,6);qs=src.map(v=>({k:"speak",prompt:v.de,sub:v.ro,ans:v.de,say:v.de}));}
+ if(a==="review"){const keys=Object.keys(S.mist);const pool=LESSONS.flatMap(x=>allVocab(x));const items=shuf(keys).slice(0,N).map(k=>pool.find(p=>p.de===k)).filter(Boolean);
+  qs=items.map((v,i)=>i%2?{k:"type",prompt:v.ro,sub:"Scrie în germană:",ans:v.de,say:v.de,item:v.de}:{k:"choice",audio:v.de,sub:"Ascultă și alege:",ans:v.ro,opts:opts(v.ro,pool.map(x=>x.ro)),say:v.de,item:v.de});}
+ return qs;}
+function startEx(l,a){const qs=genQs(l,a);EX={l:l?l.id:null,a,qs,i:0,ok:0,state:"ask",built:[],typed:"",fb:null};}
+
+function exScreen(){if(!EX||EX.key!==JSON.stringify(VIEW)){startEx(VIEW.l?L(VIEW.l):null,VIEW.a);EX.key=JSON.stringify(VIEW);}
+ const back=EX.l?`{"v":"lesson","l":"${EX.l}"}`:'{"v":"home"}';const act=ACTS.find(x=>x.id===EX.a)||{t:"Recapitulare",ic:"🔁"};
+ if(!EX.qs.length)return topBar(act.t,back)+`<div class="pad"><p>Nu sunt întrebări aici încă.</p></div>`;
+ if(EX.i>=EX.qs.length){const pct=EX.ok/EX.qs.length;const st=pct>=.9?3:pct>=.7?2:pct>=.5?1:0;
+  if(EX.l&&!EX.saved){S.prog[EX.l]=S.prog[EX.l]||{};S.prog[EX.l][EX.a]=Math.max(st,S.prog[EX.l][EX.a]||0);save();EX.saved=1;
+   say([{t:st===3?"Excelent! Ai luat trei stele!":st>=1?"Bravo! Mai încearcă o dată pentru trei stele.":"Nu-i nimic, mai exersăm o dată.",l:"ro"}]);}
+  return topBar(act.t,back)+`<div class="pad center"><div class="res">${st===3?"🏆":st>=1?"🎉":"💪"}</div><h2>${EX.ok} din ${EX.qs.length}</h2><div class="bigst">${starStr(st)}</div>
+  <button class="btn primary wide" data-act="again">Încă o dată</button><button class="btn wide" data-go='${back}'>Înapoi la lecție</button></div>`;}
+ const q=EX.qs[EX.i];
+ let body=`<div class="prog"><i style="width:${100*EX.i/EX.qs.length}%"></i></div><div class="qsub">${esc(q.sub)}</div>`;
+ if(q.audio)body+=`<button class="play" data-sayq="1">🔊</button><button class="slow" data-slow="1">🐢 încet</button>`;
+ if(q.prompt)body+=`<div class="qp">${esc(q.prompt)}</div>`;
+ if(q.hint&&EX.state!=="ask")body+=`<div class="qh">${esc(q.hint)}</div>`;
+ if(q.k==="choice")body+=`<div class="opts ${q.art?"three":""}">${q.opts.map(o=>{let c="";if(EX.state!=="ask"){if(o===q.ans)c="good";else if(o===EX.chosen)c="bad";}return `<button class="opt ${c} ${q.art?"a-"+o:""}" data-opt="${esc(o)}" ${EX.state!=="ask"?"disabled":""}>${esc(o)}</button>`;}).join("")}</div>`;
+ if(q.k==="type")body+=`<input id="tin" class="tin" ${q.num?'inputmode="numeric"':""} autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(EX.typed)}" ${EX.state!=="ask"?"disabled":""} placeholder="Scrie aici…">${q.num?"":`<div class="uml">${["ä","ö","ü","ß","Ä","Ö","Ü"].map(c=>`<button data-uml="${c}">${c}</button>`).join("")}</div>`}${EX.state==="ask"?`<button class="btn primary wide" data-act="check">Verifică</button>`:""}`;
+ if(q.k==="build"){const used=EX.built;body+=`<div class="built">${used.map((t,i)=>`<button class="tile2" data-unb="${i}">${esc(q.tiles[t])}</button>`).join("")}<span class="endp">${q.end}</span></div>
+  <div class="pool">${q.tiles.map((t,i)=>used.includes(i)?`<span class="tile2 ghost">${esc(t)}</span>`:`<button class="tile2" data-b="${i}">${esc(t)}</button>`).join("")}</div>${EX.state==="ask"?`<button class="btn primary wide" data-act="checkb" ${used.length===q.tiles.length?"":"disabled"}>Verifică</button>`:""}`;}
+ if(q.k==="speak"){body+=`<button class="play" data-sayq="1">🔊</button><button class="slow" data-slow="1">🐢 încet</button>
+  ${canListen()?`<button class="mic big" data-act="spk">🎤 Spune acum</button><div class="heard" id="heard">${esc(EX.heard||"")}</div>`:`<p class="hint">Ascultă, repetă cu voce tare de 2–3 ori, apoi apreciază singur:</p>${EX.state==="ask"?`<div class="row2"><button class="btn good" data-self="1">👍 Am reușit</button><button class="btn" data-self="0">🔁 Încă nu</button></div>`:""}`}`;}
+ if(EX.fb)body+=`<div class="fb ${EX.fb.ok?"ok":"no"}">${EX.fb.html}</div><button class="btn primary wide" data-act="next">Mai departe →</button>`;
+ return topBar(`${act.ic} ${act.t}`,back)+`<div class="pad">${body}</div>`;}
+
+const PRAISE=["Bravo!","Super!","Excelent!","Foarte bine!","Perfect!"];
+function grade(ok,html,partial){const q=EX.qs[EX.i];EX.state="done";if(ok)EX.ok++;
+ if(q.item){if(ok){if(S.mist[q.item]){S.mist[q.item]--;if(S.mist[q.item]<=0)delete S.mist[q.item];}}else S.mist[q.item]=2;save();}
+ EX.fb={ok,html};render();
+ const parts=[];if(ok)parts.push({t:pick(PRAISE),l:"ro"});else parts.push({t:"Nu chiar. Corect este:",l:"ro"});
+ parts.push({t:q.say||q.ans,l:"de"});say(parts);}
+function checkTyped(){const q=EX.qs[EX.i];const v=($("#tin").value||"").trim();EX.typed=v;if(!v)return;
+ const strip=s=>s.replace(/[.!?]+$/,"").replace(/\s+/g," ").trim();
+ const a=strip(q.ans),b=strip(v);
+ if(a===b)return grade(true,`✅ ${pick(PRAISE)} <b>${esc(q.ans)}</b>`);
+ if(a.toLowerCase()===b.toLowerCase())return grade(true,`✅ Aproape perfect! Atenție la literele mari: <b>${esc(q.ans)}</b>${/^[A-ZÄÖÜ]/.test(a.split(" ").find(w=>/^[A-ZÄÖÜ]/.test(w))||"")?"<br><small>În germană substantivele se scriu cu literă mare.</small>":""}`);
+ if(umlautFold(a.toLowerCase())===umlautFold(b.toLowerCase()))return grade(true,`✅ Corect! Dar scrie cu literele speciale: <b>${esc(q.ans)}</b>`);
+ const s=sim(a,b);grade(false,`❌ Corect este: <b>${esc(q.ans)}</b>${s>.75?"<br><small>Ai fost foarte aproape!</small>":""}<br><small>Tu ai scris: ${esc(v)}</small>`);}
+
+/* ===== events ===== */
+function bindCommon(){
+ document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{const v=JSON.parse(b.dataset.go);if(v.v==="ex")EX=null;if(v.v==="tutor"||v.v==="ask")CHAT.key=null;if(v.v==="dialog")DLG.res={};go(v);if(v.v==="ex")autoAudio();});
+ document.querySelectorAll("[data-say]").forEach(b=>b.addEventListener("click",e=>{e.stopPropagation();sayDe(b.dataset.say);}));
+ document.querySelectorAll("[data-act]").forEach(b=>b.addEventListener("click",()=>ACT[b.dataset.act]&&ACT[b.dataset.act](b)));
+ document.querySelectorAll("[data-para]").forEach(b=>b.onclick=()=>{const l=L(VIEW.l);const el=b.parentElement;say(splitMixed(l.explain[+b.dataset.para]).map(p=>({...p,el})));});
+ document.querySelectorAll("[data-role]").forEach(b=>b.onclick=()=>{DLG.role=b.dataset.role;DLG.res={};render();});
+ const hd=$("#hideDe");if(hd)hd.onchange=()=>{DLG.hide=hd.checked;render();};
+ document.querySelectorAll("[data-dmic]").forEach(b=>b.onclick=()=>dlgMic(+b.dataset.dmic,b));
+ const rs=$("#rate");if(rs)rs.oninput=()=>{S.rateDe=+rs.value;save();$("#ratev").textContent=rs.value;};
+}
+const ACT={
+ stop:()=>{stopSpeak();stopListen();},
+ readall:()=>{const l=L(VIEW.l);const parts=[];document.querySelectorAll(".para").forEach((el,i)=>splitMixed(l.explain[i]).forEach(p=>parts.push({...p,el})));say(parts);},
+ readvocab:()=>{const l=L(VIEW.l);const els=[...document.querySelectorAll(".vc")];const parts=[];l.vocab.forEach((v,i)=>{const p=pair(v);parts.push({t:p.de,l:"de",el:els[i]},{t:p.ro,l:"ro",el:els[i]});});say(parts);},
+ review:()=>{EX=null;go({v:"ex",a:"review"});},
+ again:()=>{EX=null;render();autoAudio();},
+ check:checkTyped,
+ checkb:()=>{const q=EX.qs[EX.i];const got=EX.built.map(i=>q.tiles[i]).join(" ")+q.end;const ok=got.replace(/[.!?]$/,"")===q.ans.replace(/[.!?]$/,"");grade(ok,ok?`✅ ${pick(PRAISE)} <b>${esc(q.ans)}</b>`:`❌ Corect este: <b>${esc(q.ans)}</b><br><small>Amintește-ți: verbul stă pe locul doi!</small>`);},
+ next:()=>{EX.i++;EX.state="ask";EX.fb=null;EX.typed="";EX.built=[];EX.chosen=null;EX.heard="";render();autoAudio();},
+ spk:(b)=>{const q=EX.qs[EX.i];b.textContent="👂 Ascult… (apasă ca să opresc)";b.dataset.act="stopl";b.onclick=()=>stopListen();
+  listen(t=>{const h=$("#heard");if(h)h.textContent=t;}).then(t=>{EX.heard=t||"";if(!t){EX.fb=null;render();const h=$("#heard");if(h)h.textContent="Nu te-am auzit. Mai încearcă!";return;}
+   const s=sim(t,q.ans);const ok=s>=.7;grade(ok,ok?`✅ ${pick(PRAISE)} Am înțeles: „${esc(t)}”`:`🔁 Am auzit: „${esc(t)}”<br>Ascultă din nou și încearcă: <b>${esc(q.ans)}</b>`);});},
+ settestro:()=>say([{t:"Bună! Eu sunt vocea care îți explică în română.",l:"ro"}]),
+ settestde:()=>say([{t:"Hallo! Ich bin die deutsche Stimme.",l:"de"}]),
+ reset:(b)=>{if(b.dataset.sure){S.prog={};S.mist={};save();go({v:"home"});}else{b.dataset.sure=1;b.textContent="Apasă încă o dată pentru confirmare";}},
+ rename:()=>{S.name="";save();go({v:"home"});},
+ dlgplay:dlgPlay,
+ send:()=>chatSend(),
+ mic:(b)=>chatMic(b)
+};
+function autoAudio(){const q=EX&&EX.qs[EX.i];if(!q)return;if(q.audio)sayDe(q.audio);else if(q.sayFirst||q.k==="speak")sayDe(q.say);}
+function bindEx(){
+ document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=()=>{const q=EX.qs[EX.i];EX.chosen=b.dataset.opt;const ok=EX.chosen===q.ans;grade(ok,ok?`✅ ${pick(PRAISE)} <b>${esc(q.say||q.ans)}</b>`:`❌ Corect: <b>${esc(q.ans)}</b>${q.say&&q.say!==q.ans?` — ${esc(q.say)}`:""}`);});
+ document.querySelectorAll("[data-sayq]").forEach(b=>b.onclick=()=>sayDe(EX.qs[EX.i].say));
+ document.querySelectorAll("[data-slow]").forEach(b=>b.onclick=()=>{const r=S.rateDe;S.rateDe=.6;sayDe(EX.qs[EX.i].say).then(()=>{S.rateDe=r;});setTimeout(()=>S.rateDe=r,200);});
+ document.querySelectorAll("[data-uml]").forEach(b=>b.onclick=()=>{const i=$("#tin");if(!i)return;const p=i.selectionStart??i.value.length;i.value=i.value.slice(0,p)+b.dataset.uml+i.value.slice(i.selectionEnd??p);i.focus();i.setSelectionRange(p+1,p+1);});
+ const t=$("#tin");if(t){t.addEventListener("keydown",e=>{if(e.key==="Enter")checkTyped();});t.addEventListener("input",()=>EX.typed=t.value);if(EX.state==="ask")setTimeout(()=>t.focus(),50);}
+ document.querySelectorAll("[data-b]").forEach(b=>b.onclick=()=>{EX.built.push(+b.dataset.b);sayDe(EX.qs[EX.i].tiles[+b.dataset.b]);render();});
+ document.querySelectorAll("[data-unb]").forEach(b=>b.onclick=()=>{if(EX.state!=="ask")return;EX.built.splice(+b.dataset.unb,1);render();});
+ document.querySelectorAll("[data-self]").forEach(b=>b.onclick=()=>{const ok=b.dataset.self==="1";grade(ok,ok?"✅ Bravo! Continuă tot așa!":"🔁 Ascultă încă o dată și repetă. Data viitoare va ieși!");});
+}
+
+/* dialog play */
+async function dlgPlay(){const l=L(VIEW.l);const lines=l.dialog.map(x=>{const[w,de,ro]=x.split("|");return{w,de,ro};});
+ stopSpeak();const tok=speakToken;DLG.res={};
+ for(let i=0;i<lines.length;i++){if(tok!==speakToken)return;const el=$("#dl"+i);if(!el)return;el.scrollIntoView({behavior:"smooth",block:"center"});
+  if(lines[i].w===DLG.role){el.classList.add("turn");await new Promise(r=>{DLG.wait=r;});el.classList.remove("turn");if(tok!==speakToken)return;continue;}
+  el.classList.add("speaking");await sayOne(lines[i].de,"de",tok);el.classList.remove("speaking");await new Promise(r=>setTimeout(r,300));}
+ if(tok===speakToken)say([{t:"Bravo! Ai terminat dialogul.",l:"ro"}]);}
+function dlgMic(i,b){const l=L(VIEW.l);const de=l.dialog[i].split("|")[1];const h=$("#dh"+i);
+ if(!canListen()){DLG.wait&&DLG.wait();DLG.wait=null;return;}
+ b.textContent="👂 Ascult…";
+ const resumeTok=speakToken;
+ listen(t=>{h.textContent=t;}).then(t=>{b.textContent="🎤 Spune";if(!t){h.textContent="Nu te-am auzit. Mai încearcă!";return;}
+  const s=sim(t,de);DLG.res[i]=t;h.innerHTML=(s>=.7?"✅ ":"🔁 ")+esc(t);
+  if(s>=.7){if(DLG.wait){const w=DLG.wait;DLG.wait=null;speakToken=resumeTok;w();}}else{sayOne(de,"de",speakToken);}});
+ // listen() calls stopSpeak -> keep the dialog token alive
+ speakToken=resumeTok;}
+
+/* ===== AI tutor & ask ===== */
+let CHAT={key:null,msgs:[],busy:false};
+function tutorLesson(){return L(VIEW.l);}
+function lessonsUpTo(l){const i=LESSONS.indexOf(l);return LESSONS.slice(0,i+1);}
+function tutorSystem(l){const up=lessonsUpTo(l);
+ const vocab=up.flatMap(x=>x.vocab.map(v=>pair(v).de)).join(", ");
+ return `Ești „Lina”, o tutoră prietenoasă de limba germană pentru un copil (${S.name}) vorbitor de română, care învață după manualul „Beste Freunde A1.1”. Lecția curentă: ${l.nr} „${l.title}”. Sarcina conversației: ${l.tutor}
+Reguli stricte:
+- Vorbești cu copilul în GERMANĂ foarte simplă (nivel A1, propoziții de 3–8 cuvinte), folosind doar gramatica și vocabularul lecțiilor parcurse: ${up.map(x=>x.nr+" "+x.title).join("; ")}. Vocabular permis (plus cuvinte internaționale evidente): ${vocab}.
+- Fiecare replică a ta: o reacție scurtă + O SINGURĂ întrebare simplă, ca să continue conversația.
+- Dacă copilul face o greșeală, o corectezi blând în ROMÂNĂ în câmpul "corectura" (scurt, cu forma corectă în germană). Dacă nu e greșeală, lasă "corectura" gol.
+- Dacă copilul scrie în română, ajută-l să spună același lucru în germană.
+- Lauzi des, ești caldă și răbdătoare. Nu folosi emoji în câmpul "de".
+Răspunde DOAR cu JSON valid, fără alt text: {"de":"replica ta în germană","ro":"traducerea ei în română","corectura":"corectare în română sau șir gol"}`;}
+function askSystem(){return `Ești un profesor de limba germană răbdător, care explică în ROMÂNĂ unui copil (${S.name}) ce învață după manualul „Beste Freunde A1.1” (Start și Lecțiile 1–6: saluturi, numere, der/die/das, conjugarea la prezent, sein, haben, verbul pe locul 2, gern/nicht, in/aus, finden, sprechen, ein/eine/einen, möchten, können, müssen, ora). Răspunde scurt și clar (maxim 6 propoziții), cu exemple. Pune ORICE cuvânt sau exemplu german între paranteze duble, ca [[Ich heiße Ana]], ca aplicația să-l poată citi cu voce germană. Fără markdown, fără liste lungi.`;}
+function tutorScreen(){const l=tutorLesson();if(CHAT.key!=="t"+l.id){CHAT={key:"t"+l.id,msgs:[],busy:false};}if(!CHAT.started)setTimeout(()=>chatStart(),50);
+ return topBar("🤖 Tutorele Lina",`{"v":"lesson","l":"${l.id}"}`)+chatBody(`Conversație despre: ${l.tutor}`);}
+function askScreen(){if(CHAT.key!=="ask"){CHAT={key:"ask",msgs:[],busy:false};}
+ return topBar("🙋 Întreabă profesorul",'{"v":"home"}')+chatBody("Scrie orice întrebare în română, de exemplu: „Când folosesc der și când die?” sau „Cum se spune «am nevoie de o carte»?”");}
+function chatBody(intro){
+ if(!CAP.sample)return `<div class="pad"><div class="note">🤖 Partea cu inteligență artificială funcționează când aplicația este deschisă în contul Claude (claude.ai). Restul aplicației merge oriunde.<br><br>Până atunci, exersează cu „Dialog” și „Repetă după mine”.</div></div>`;
+ return `<div class="pad chat"><div class="note">${esc(intro)}</div><div id="msgs">${CHAT.msgs.map(msgHTML).join("")}${CHAT.busy?`<div class="msg ai"><i>Lina se gândește…</i></div>`:""}</div></div>
+ <div class="composer"><div class="uml">${["ä","ö","ü","ß"].map(c=>`<button data-uml2="${c}">${c}</button>`).join("")}</div>
+ <div class="crow">${canListen()&&CHAT.key!=="ask"?`<button class="ic mic" data-act="mic">🎤</button>`:""}<input id="cin" placeholder="${CHAT.key==="ask"?"Întrebarea ta…":"Scrie în germană…"}" autocomplete="off"><button class="btn primary" data-act="send" ${CHAT.busy?"disabled":""}>➤</button></div></div>`;}
+function msgHTML(m,i){if(m.role==="user")return `<div class="msg me">${esc(m.show||m.content)}</div>`;
+ if(m.ask)return `<div class="msg ai"><button class="pl" data-replay="${i}">▶</button> ${mixedHTML(m.text)}</div>`;
+ return `<div class="msg ai"><div class="dde" data-say="${esc(m.de)}">🔊 ${esc(m.de)}</div>${S.showRo?`<div class="dro">${esc(m.ro)}</div>`:`<button class="tr" data-tr="${i}">🇷🇴 traducere</button>`}${m.cor?`<div class="cor">✏️ ${mixedHTML(m.cor)}</div>`:""}</div>`;}
+function bindChat(){const i=$("#cin");if(i){i.addEventListener("keydown",e=>{if(e.key==="Enter")chatSend();});}
+ document.querySelectorAll("[data-uml2]").forEach(b=>b.onclick=()=>{const i=$("#cin");i.value+=b.dataset.uml2;i.focus();});
+ document.querySelectorAll("[data-replay]").forEach(b=>b.onclick=()=>say(splitMixed(CHAT.msgs[+b.dataset.replay].text)));
+ document.querySelectorAll("[data-tr]").forEach(b=>b.onclick=()=>{b.outerHTML=`<div class="dro">${esc(CHAT.msgs[+b.dataset.tr].ro)}</div>`;});
+ const m=$("#msgs");if(m)m.lastElementChild&&m.lastElementChild.scrollIntoView({block:"end"});}
+function parseJSON(t){try{return JSON.parse(t);}catch(e){}const a=t.indexOf("{"),b=t.lastIndexOf("}");if(a>=0&&b>a){try{return JSON.parse(t.slice(a,b+1));}catch(e){}}return null;}
+async function callAI(){CHAT.busy=true;render();
+ const ask=CHAT.key==="ask";const l=ask?null:tutorLesson();
+ const sys=ask?askSystem():tutorSystem(l);
+ const hist=CHAT.msgs.map(m=>m.role==="user"?{role:"user",content:m.content}:{role:"assistant",content:m.ask?m.text:JSON.stringify({de:m.de,ro:m.ro,corectura:m.cor||""})});
+ if(!hist.length&&ask){CHAT.busy=false;render();return;}
+ let input;if(hist.length&&hist[0].role==="user"){input=hist.slice();input[0]={role:"user",content:sys+"\n\nMesajul copilului: "+hist[0].content};}
+ else input=[{role:"user",content:sys+"\n\n(Începe conversația acum cu un salut și o întrebare.)"},...hist];
+ try{const r=await CAP.sample(input,{cache:false,modelTier:"default"});
+  if(ask){CHAT.msgs.push({role:"assistant",ask:true,text:r.text.trim()});CHAT.busy=false;render();say(splitMixed(r.text));}
+  else{const j=parseJSON(r.text)||{de:r.text.trim(),ro:"",corectura:""};CHAT.msgs.push({role:"assistant",de:j.de||"",ro:j.ro||"",cor:j.corectura||""});CHAT.busy=false;render();
+   const parts=[];if(j.corectura)parts.push(...splitMixed(j.corectura));parts.push({t:j.de,l:"de"});say(parts);}
+ }catch(e){CHAT.busy=false;CHAT.msgs.push({role:"assistant",ask:true,text:e&&e.code==="rate_limited"?"Prea multe mesaje deodată. Așteaptă puțin și încearcă din nou.":e&&e.code==="not_granted"?"Tutorele nu are permisiunea de a porni. Verifică setările.":"Nu am putut răspunde acum. Încearcă din nou."});render();}}
+function chatStart(){if(CHAT.key&&CHAT.key!=="ask"&&!CHAT.msgs.length&&!CHAT.busy&&!CHAT.started&&CAP.sample){CHAT.started=1;callAI();}}
+function chatSend(){const i=$("#cin");if(!i||CHAT.busy)return;const v=i.value.trim();if(!v)return;CHAT.msgs.push({role:"user",content:v});callAI();}
+function chatMic(b){b.textContent="👂";listen(t=>{const i=$("#cin");if(i)i.value=t;}).then(t=>{b.textContent="🎤";if(t){const i=$("#cin");if(i)i.value=t;}});}
+
+function settingsScreen(){const ro=voiceFor("ro"),de=voiceFor("de");
+ return topBar("Setări",'{"v":"home"}')+`<div class="pad">
+ <h3 class="gh">Voci</h3>
+ <div class="note">Voce română: <b>${ro?esc(ro.name):CAP.tts?"vocea Claude":"nu a fost găsită"}</b><br>Voce germană: <b>${de?esc(de.name):CAP.tts?"vocea Claude":"nu a fost găsită"}</b>
+ ${(!ro||!de)&&!CAP.tts?`<br><small>Pe Android: Setări → Accesibilitate → Text în vorbire → Google → instalează limbile română și germană. Pe iPhone: Setări → Accesibilitate → Conținut vorbit → Voci.</small>`:""}</div>
+ <div class="row2"><button class="btn" data-act="settestro">🔊 Test română</button><button class="btn" data-act="settestde">🔊 Test germană</button></div>
+ <label>Viteza vocii germane: <b id="ratev">${S.rateDe}</b></label><input type="range" id="rate" min="0.6" max="1.1" step="0.05" value="${S.rateDe}">
+ <label class="chk"><input type="checkbox" id="showro" ${S.showRo?"checked":""} onchange="S.showRo=this.checked;save()"> Arată traducerea la tutore</label>
+ <h3 class="gh">Microfon</h3><div class="note">${canListen()?"✅ Recunoașterea vocii este disponibilă.":"Recunoașterea vocii nu este disponibilă în acest browser. Exercițiile de vorbire merg în modul „repetă și apreciază singur”."}</div>
+ <h3 class="gh">Profil</h3><button class="btn wide" data-act="rename">Schimbă numele (${esc(S.name)})</button><button class="btn wide danger" data-act="reset">Șterge tot progresul</button></div>`;}
+
+render();
+</script></body></html>
